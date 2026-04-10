@@ -1,9 +1,16 @@
 {
   "name": "node-lts",
   "version": "1.0.0",
-  "description": "CLI and library to query active Node.js LTS and current versions",
+  "description": "Get active Node.js LTS and current version numbers",
   "license": "MIT",
-  "author": "Roman Ozana",
+  "author": "Roman Ožana <roman@ozana.cz> (https://ozana.cz/)",
+  "keywords": [
+    "node",
+    "nodejs",
+    "lts",
+    "version",
+    "release"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/OzzyCzech/node-lts.git"
@@ -24,7 +31,7 @@
   "bin": {
     "node-lts": "./dist/cli.js"
   },
-"engines": {
+  "engines": {
     "node": ">=18"
   },
   "scripts": {
