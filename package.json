@@ -24,10 +24,7 @@
   "bin": {
     "node-lts": "./dist/cli.js"
   },
-  "files": [
-    "dist"
-  ],
-  "engines": {
+"engines": {
     "node": ">=18"
   },
   "scripts": {
