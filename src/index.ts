@@ -46,6 +46,6 @@ export function parseSchedule(
 export async function getNodeVersions(): Promise<NodeVersions> {
   const res = await fetch(SCHEDULE_URL);
   if (!res.ok) throw new Error(`Failed to fetch schedule: HTTP ${res.status}`);
-  const schedule: Record<string, ScheduleEntry> = await res.json();
+  const schedule = (await res.json()) as Record<string, ScheduleEntry>;
   return parseSchedule(schedule);
 }

@@ -13,13 +13,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/OzzyCzech/node-versions-info.git"
+    "url": "git+https://github.com/OzzyCzech/node-versions-info.git"
   },
   "homepage": "https://github.com/OzzyCzech/node-versions-info#readme",
   "bugs": {
     "url": "https://github.com/OzzyCzech/node-versions-info/issues"
   },
   "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -39,9 +44,10 @@
     "dev": "tsup --watch",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prepublishOnly": "npm run build && npm test"
+    "prepublishOnly": "pnpm run build && pnpm test"
   },
   "devDependencies": {
+    "@ozzyczech/tsconfig": "^2.0.0",
     "@types/node": "^25.6.0",
     "tsup": "^8.5.1",
     "typescript": "^6.0.2",
