@@ -21,8 +21,8 @@ Output:
 ```json
 {
   "active": [20, 22, 24, 25],
+  "maintenance": [22, 24, 25],
   "lts": 24,
-  "maintenance": [20, 25],
   "current": 25,
   "next": 26
 }
